@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.7",
+    "@radix-ui/react-select": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-toast": "^1.2.7",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.545.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.55.0",
+    "tailwind-merge": "^3.3.1",
+    "wouter": "^3.3.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.2"
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobBoard — Find Your Dream Job</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a class="nav-logo" href="#" onclick="navigate('home')">
+        💼 JobBoard
+      </a>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" onclick="navigate('jobs')">Find Jobs</a></li>
+        <li><a href="#" id="nav-dashboard" onclick="navigate('dashboard')" style="display:none">Dashboard</a></li>
+        <li id="nav-auth-links">
+          <a href="#" onclick="navigate('login')">Log In</a>
+          <a href="#" class="btn btn-primary btn-sm" onclick="navigate('register')">Sign Up</a>
+        </li>
+        <li id="nav-user" style="display:none">
+          <span id="nav-name" class="nav-name"></span>
+          <button class="btn btn-ghost btn-sm" onclick="logout()">Logout</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="app"></main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">💼 JobBoard</div>
+        <p>Connecting top talent with amazing companies worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-heading">For Job Seekers</div>
+        <ul>
+          <li><a href="#" onclick="navigate('jobs')">Browse Jobs</a></li>
+          <li><a href="#" onclick="navigate('register')">Create Account</a></li>
+          <li><a href="#">Career Advice</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-heading">For Employers</div>
+        <ul>
+          <li><a href="#" onclick="navigate('register')">Post a Job</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Talent Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-heading">Company</div>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 JobBoard Inc. All rights reserved.</p>
+        <p>Made with ❤️ for job seekers everywhere</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
